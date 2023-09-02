@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sleep
+spec:
+  completions: 5
+  parallelism: 3
+  template:
+    spec:
+      containers:
+      - name: sleep
+        image: alpine
+        command: ["sh", "-c"]
+        args:
+        - |
+          sleep 3
+      restartPolicy: Never
