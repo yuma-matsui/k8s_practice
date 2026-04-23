@@ -56,3 +56,6 @@ kubectl delete -f manifests/
 
 - 一部マニフェストは StorageClass や NodePort など、クラスタ設定に依存します。
 - うまく動かない場合は `kubectl describe` と `kubectl events --for <resource>` で原因を確認してください。
+
+---
+最終更新テスト: Cursor CLI 設定確認用の追記です。
